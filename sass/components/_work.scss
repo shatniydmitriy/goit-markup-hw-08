@@ -1,0 +1,18 @@
+.work__pic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.work__wraper {
+    position: relative;
+}
+
+.work__img {
+    display: block;
+}
+
+.work {
+    @extend %more;
+}

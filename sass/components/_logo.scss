@@ -1,0 +1,23 @@
+.logo {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    font-family: 'Raleway', sans-serif;
+
+    &>span {
+            color: var(--primary-text-color);
+        }
+
+}
+
+.page-footer .logo>span {
+    color: var(--primary-white-color);
+
+}
+
+.logo-second {
+
+    margin-bottom: 20px;
+    display: block;
+}

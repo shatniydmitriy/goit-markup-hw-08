@@ -1,0 +1,36 @@
+.button-close {
+    fill: var(--primary-text-color);
+    transition: fill var(--anim);
+
+
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translate(-8px, 8px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--primary-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+
+}
+
+
+.modal-close-btn:focus,
+.modal-close-btn:hover>.button-close {
+    fill: var(--accent-color);
+}

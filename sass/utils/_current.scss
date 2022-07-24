@@ -1,0 +1,23 @@
+.link-current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(33px);
+
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+
+
+.link-current {
+    text-decoration: none;
+    position: relative;
+    color: var(--accent-color);
+    font-weight: 500;
+}

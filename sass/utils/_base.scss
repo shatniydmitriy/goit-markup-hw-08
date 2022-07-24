@@ -1,0 +1,28 @@
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color);
+}

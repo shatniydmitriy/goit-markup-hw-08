@@ -1,0 +1,53 @@
+.author {
+    margin-bottom: 9px;
+}
+
+.author:last-child {
+    margin-bottom: 0;
+
+}
+
+.contacts .link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.address-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-white-color);
+
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+
+
+.author {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+
+.address-link {
+    text-decoration: none;
+}
