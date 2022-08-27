@@ -24,6 +24,11 @@
                 <a href="#" class="logo link primary">
                     Web<span>Studio</span>
                 </a>
+                <button type="button" class="mobile-menu-open" data-menu-open>
+                    <svg class="mobile-menu-open__icon" width="24" height="24">
+                        <use href="./images/icons-svg.svg#burger-icon"></use>
+                    </svg>
+                </button>
 
                 <ul class="site-nav list">
                     <li class="nav-item"><a href="./index.html" class="link-current">Студия</a></li>
@@ -46,23 +51,60 @@
                         </svg>+38 096 111 11 11</a></li>
                 </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="24" height="24">
+                        <use href="./images/icons-svg.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-nav list">
+                    <li class="mobile-menu-nav__item">
+                        <a class="mobile-menu-nav-link active link" href="./index.html">Студия</a></li>
+                    <li class="mobile-menu-nav__item">
+                        <a class="mobile-menu-nav-link link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu-nav__item">
+                        <a class="mobile-menu-nav-link link" href="#">Контакты</a></li>
+                </ul>
+                
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts__item">
+                        <a class="mobile-menu-contacts-link link accent" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+                    <li class="mobile-menu-contacts__item">
+                        <a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-menu-socials list">
+                    <li class="mobile-menu-socials__item">
+                        <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer" aria-label="Instagram">Instagram</a></li>
+                    <li class="mobile-menu-socials__item">
+                        <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer" aria-label="Twitter">Twitter</a></li>
+                    <li class="mobile-menu-socials__item">
+                        <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer" aria-label="Facebook">Facebook</a></li>
+                    <li class="mobile-menu-socials__item">
+                        <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+
+            </div>
+            
+
+        </div>
 
     </header>
     <main>
 
     
-    <section class="hero overly">
+    <section class="hero hero-overlay">
         <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
     
-    <section class="features">
+    <section class="features">  
         <div class="container">
             <h2 hidden>мы предлогаем</h2>
-            <ul class="features__about list">
-                <li class="features__item icon-delivery">
+            <ul class="features__about list card-set">
+                <li class="features__item icon-delivery card-set__item">
                     <div class="features__icon">
                         <svg  width="70" height="70">
                             <use href="./images/icons-svg.svg#icon-antenna"></use>
@@ -73,7 +115,7 @@
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li class="features__item icon-clock">
+                <li class="features__item icon-clock card-set__item">
                     <div class="features__icon">
                         <svg width="70" height="70">
                             <use href="./images/icons-svg.svg#icon-clock"></use>
@@ -85,7 +127,7 @@
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li class="features__item icon-diagram">
+                <li class="features__item icon-diagram card-set__item">
                     <div class="features__icon">
                         <svg width="70" height="70">
                             <use href="./images/icons-svg.svg#icon-diagram"></use>
@@ -96,7 +138,7 @@
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li class="features__item icone-astronaut">
+                <li class="features__item icone-astronaut card-set__item">
                     <div class="features__icon">
                         <svg width="70" height="70">
                             <use href="./images/icons-svg.svg#icon-astronaut"></use>
@@ -111,7 +153,7 @@
         </div>
        
 
-    </section>
+    </section>   
 
     <section class="work">
         <div class="container">
@@ -119,37 +161,65 @@
             <ul class="work__pic list">
                 <li class="about-pic">
                     <div class="work__wraper">
-                        <img class="work__img" src="images/img(1).jpg" alt="верстка,дизайн,внешнее оформление" width="370" />
+                        <picture>
+                            <source srcset="images/work/img-1.jpg 1x, images/work/img-1@2x.jpg 2x" 
+                            media="(min-width: 1200px)"/>
+                          
+                            <img class="work__img" src="images/work/img-1.jpg" alt="верстка,дизайн,внешнее оформление" width="370" />
+                        </picture>
+                        
+
+                       
                         <p class="description">Десктопные приложения</p>
                     </div>
 
                 </li>
                 <li class="about-pic">
                     <div class="work__wraper">
-                        <img class="work__img" src="images/img(2).jpg" alt="мобильные приложения" width="370" />
+                        <picture>
+                            <source srcset="images/work/img-2.jpg 1x, images/work/img-2@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                        
+                            <img class="work__img" src="images/work/img-2.jpg" alt="мобильные приложения" width="370" />
+                        </picture>
+
                         <p class="description">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="about-pic">
                    <div class="work__wraper">
-                        <img class="work__img" src="images/img(3).jpg" alt="палитра на планшете" width="370" />
+                        <picture>
+                            <source srcset="images/work/img-3.jpg 1x, images/work/img-3@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                    
+                            <img class="work__img" src="images/work/img-3.jpg" alt="палитра на планшете" width="370" />
+                        </picture>
                         <p class="description">Дизайнерские решения</p>
                    </div>
                 </li>
             </ul>
          </div>
-    </section>
+    </section>  
 
     <section class="team">
         <div class="container">
             <h2 class="title">Наша команда</h2>
-            <ul class="team__about list">
-                <li class="team__item">
+            <ul class="team__about list card-set">
+                <li class="team__item card-set__item">
+                    <picture>
+                        <source srcset="./images/team/img-1_desc.jpg 1x, ./images/team/img-1@2x_desc.jpg 2x" 
+                        media="(min-width: 1200px)"/>
+                        <source srcset="./images/team/img-1_tab.jpg 1x, ./images/team/img-1@2x_tab.jpg 2x" 
+                        media="(min-width: 768px)"/>
+                        <source srcset="./images/team/img-1_mob.jpg 1x, ./images/team/img-1@2x_mob.jpg 2x"
+                         media="(min-width: 320px)"/>
+                        
+
+                        <img src="images/team/img-1_mob.jpg" alt="мужчина в коричневой рубашке">
+
+                    </picture>
                     
-                        <img 
-                            src="images/img(4).jpg"    
-                            alt="мужчина в коричневой рубашке"
-                            width="270">
+                        
                     
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         
@@ -210,12 +280,21 @@
 
                    
                 </li>
-                <li class="team__item">
+                <li class="team__item card-set__item">
+                    <picture>
+                        <source srcset="./images/team/img-2_desc.jpg 1x, ./images/team/img-2@2x_desc.jpg 2x"
+                         media="(min-width: 1200px)" />
+                        <source srcset="./images/team/img-2_tab.jpg 1x, ./images/team/img-2@2x_tab.jpg 2x"
+                         media="(min-width: 768px)" />
+                        <source srcset="./images/team/img-2_mob.jpg 1x, ./images/team/img-2@2x_mob.jpg 2x"
+                         media="(min-width: 320px)" />
                     
-                        <img 
-                            src="images/img(5).jpg" 
-                            alt="блондинка в пиджаке" 
-                            width="270">
+                    
+                        <img src="images/team/img-1_mob.jpg" alt="блондинка в пиджаке">
+                    
+                    </picture>
+                    
+                        
                     
                         <h3 class="team__name">Ольга Репина</h3>
                     
@@ -260,12 +339,21 @@
                         </ul>
                    
                 </li>
-                <li class="team__item">
+                <li class="team__item card-set__item">
+                    <picture>
+                        <source srcset="./images/team/img-3_desc.jpg 1x, ./images/team/img-3@2x_desc.jpg 2x" 
+                        media="(min-width: 1200px)" />
+                        <source srcset="./images/team/img-3_tab.jpg 1x, ./images/team/img-3@2x_tab.jpg 2x" 
+                        media="(min-width: 768px)" />
+                        <source srcset="./images/team/img-3_mob.jpg 1x, ./images/team/img-3@2x_mob.jpg 2x" 
+                        media="(min-width: 320px)" />
                     
-                        <img 
-                            src="images/img(6).jpg" 
-                            alt="мужчина в голубой рубашке" 
-                            width="270">
+                    
+                        <img src="images/team/img-3_mob.jpg" alt="мужчина в голубой рубашке">
+                    
+                    </picture>
+                    
+                        
                     
                         <h3 class="team__name">Николай Тарасов</h3>
                         
@@ -310,12 +398,21 @@
                         </ul>
                    
                 </li>
-                <li class="team__item">
+                <li class="team__item card-set__item">
+                    <picture>
+                        <source srcset="./images/team/img-4_desc.jpg 1x, ./images/team/img-4@2x_desc.jpg 2x" 
+                        media="(min-width: 1200px)" />
+                        <source srcset="./images/team/img-4_tab.jpg 1x, ./images/team/img-4@2x_tab.jpg 2x" 
+                        media="(min-width: 768px)" />
+                        <source srcset="./images/team/img-4_mob.jpg 1x, ./images/team/img-4@2x_mob.jpg 2x" 
+                        media="(min-width: 320px)" />
                     
-                        <img 
-                            src="images/img(7).jpg" 
-                            alt="мужчина в черной футболке" 
-                            width="270">
+                    
+                        <img src="images/team/img-4_mob.jpg" alt="мужчина в черной футболке">
+                    
+                    </picture>
+                    
+                        
                     
                         <h3 class="team__name">Михаил Ермаков</h3>
                     
@@ -361,12 +458,12 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> 
     <section class="clients">
         <div class="container">
             <h2 class="title">Постоянные клиенты</h2>
-            <ul class="clients__about list">
-                <li class="clients__item">
+            <ul class="clients__about list card-set">
+                <li class="clients__item card-set__item">
                     <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="company1">
                     
                         <svg class="clients__icone" width="106" height="60">
@@ -374,7 +471,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="clients__item">
+                <li class="clients__item card-set__item">
                     <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="company2">
                     
                         <svg class="clients__icone" width="106" height="60">
@@ -382,7 +479,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="clients__item">
+                <li class="clients__item card-set__item">
                     <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="company3">
                     
                         <svg class="clients__icone" width="106" height="60">
@@ -390,7 +487,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="clients__item">
+                <li class="clients__item card-set__item">
                     <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="company4">
                     
                         <svg class="clients__icone" width="106" height="60">
@@ -398,7 +495,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="clients__item">
+                <li class="clients__item card-set__item">
                     <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="company5">
                     
                         <svg class="clients__icone" width="106" height="60">
@@ -407,7 +504,7 @@
                     </a>
 
                 </li>
-                <li class="clients__item">
+                <li class="clients__item card-set__item">
                     <a class="clients__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="company6">
                     
                         <svg class="clients__icone" width="106" height="60">
@@ -422,7 +519,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
         <div class="container">
             <div class="footer-container">
                 <div class="primary-footer">
@@ -492,7 +589,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
@@ -555,6 +652,8 @@
         </div>
         
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+
 </body>
 </html>
