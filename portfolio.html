@@ -22,6 +22,11 @@
                     <a href="./index.html" class="logo link primary">
                         Web<span>Studio</span>
                     </a>
+                    <button type="button" class="mobile-menu-open" data-menu-open>
+                        <svg class="mobile-menu-open__icon" width="24" height="24">
+                            <use href="./images/icons-svg.svg#burger-icon"></use>
+                        </svg>
+                    </button>
             
                     <ul class="site-nav list">
                         <li class="nav-item"><a href="./index.html" class="link">Студия</a></li>
@@ -42,6 +47,61 @@
                             </svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="mobile-menu__close-icon" width="24" height="24">
+                            <use href="./images/icons-svg.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-menu-nav list">
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav-link active link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav-link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav-link link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu-group">
+                        <ul class="mobile-menu-contacts list">
+                            <li class="mobile-menu-contacts__item">
+                                <a class="mobile-menu-contacts-link link accent" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu-contacts__item">
+                                <a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu-socials list">
+                            <li class="mobile-menu-socials__item">
+                                <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer"
+                                    aria-label="Instagram">Instagram</a>
+                            </li>
+                            <li class="mobile-menu-socials__item">
+                                <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer"
+                                    aria-label="Twitter">Twitter</a>
+                            </li>
+                            <li class="mobile-menu-socials__item">
+                                <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer"
+                                    aria-label="Facebook">Facebook</a>
+                            </li>
+                            <li class="mobile-menu-socials__item">
+                                <a class="mobile-menu-socials-link link" href="" target="_blank" rel="noopener nofollow noreferrer"
+                                    aria-label="LinkedIn">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+            
+            
+            
+                </div>
+            
+            
+            </div>
+
         
         </header>
         <main class="main">
@@ -343,7 +403,7 @@
                 </div>
             </section>
         </main>
-        <!-- <footer class="page-footer">
+         <footer class="page-footer">
             <div class="container">
                 <div class="footer-container">
                     <div class="primary-footer">
@@ -419,7 +479,8 @@
 
                 
             </div>
-        </footer> -->
+        </footer>
+        <script src="./js/mobile-menu.js"></script>
  
 
 

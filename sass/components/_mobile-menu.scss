@@ -26,7 +26,7 @@
     
         .mobile-menu__container {
             position: relative;
-            padding-left: 25px;
+            
             padding-top: 48px;
             padding-bottom: 48px;
         }
@@ -41,8 +41,25 @@
             border: none;
             padding: 0;
             line-height: 0;
+
+            transition: color var(--anim);
+            
+                &:hover,
+                &:focus {
+                    color: var(--accent-color);
+                }
         }
     
+}
+.mobile-menu-open {
+
+    transition: color var(--anim);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -54,8 +71,16 @@
 }
 
 // ggjjj
+.mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
 .mobile-menu-nav {
-    // margin-bottom: 150px;
+    
     padding-left: 25px;
 }
 

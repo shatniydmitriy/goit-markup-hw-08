@@ -1,3 +1,16 @@
+@media screen and (max-width: 1119px) {
+    .author {
+        // text-align: center;
+        margin-bottom: 8px;
+
+    }
+    .contacts {
+        text-align: center;
+    }
+}
+
+
+
 .author {
     margin-bottom: 9px;
 }
@@ -38,12 +51,16 @@
     line-height: 2;
     letter-spacing: 0.03em;
 
+
+
     transition: color var(--anim);
 
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
+
+    
 }
 
 

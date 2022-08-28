@@ -43,6 +43,20 @@
 
 }
 
+@media screen and (max-width: 767px) {
+    .footer-social {
+        justify-content: center;
+
+    }
+
+    .primary-footer {
+        margin-bottom: 60px;
+    }
+    
+}
+
+
+
 .footer-social-link:nth-child(n+2) {
     margin-left: 10px;
 
